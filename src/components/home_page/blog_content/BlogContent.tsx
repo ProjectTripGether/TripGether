@@ -10,10 +10,12 @@ type Props = {};
 
 const BlogContent = (props: Props) => {
   return (
-    <div id={navToTrip.name} className="flex flex-col items-center pt-20">
+    <div id={navToTrip.name} className="flex flex-col items-center pt-20 px-24">
       <h3 className="text-4xl font-normal py-5">Trip Enjoy The Moment</h3>
-      <SearchBox />
-      <div className="columns-1 pt-8 sm:columns-3 lg:columns-5 mx-32">
+      <div className="w-full xl:px-72 lg:px-64">
+        <SearchBox />
+      </div>
+      <div className="columns-1 pt-8 sm:columns-3 lg:columns-5">
         {blogMockData.map((data) => (
           <div key={data.id} className="break-inside-avoid mb-4">
             <Image

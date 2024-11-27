@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <HomeContent />
-      <div className="h-[6000px] bg-white">
+      <div className="h-full bg-white">
         <Welcome />
         <BlogContent />
       </div>
