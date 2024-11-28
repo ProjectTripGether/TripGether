@@ -1,8 +1,8 @@
 "use client";
-import SlideHome from "@/components/home_content/SlideHome";
-import Welcome from "@/components/welcome_content/Welcome";
+import BlogContent from "@/components/home_page/blog_content/BlogContent";
+import HomeContent from "@/components/home_page/home_content/HomeContent";
+import Welcome from "@/components/home_page/welcome_content/Welcome";
 import { useSession } from "next-auth/react";
-import Image from "next/image";
 
 export default function Home() {
   const { data: session } = useSession();

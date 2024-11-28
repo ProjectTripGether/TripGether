@@ -1,10 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { blogMockData, navToTrip } from "../../../../lib/data";
+
 import { TfiWorld } from "react-icons/tfi";
 import { FaEye } from "react-icons/fa";
 import SearchBox from "./SearchBox";
+import { blogMockData, navToTrip } from "@/lib/frontend/data";
 
 type Props = {};
 

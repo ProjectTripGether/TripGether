@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import SessionProvider from "@/components/next-auth/SessionProvider";
 import { getServerSession } from "next-auth";
+import MynavBar from "@/components/UI/MyNavbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,9 +19,12 @@ export default async function RootLayout({
 }>) {
   const session = await getServerSession();
   return (
-    <html lang="en">
+    <html lang="en" style={{ scrollBehavior: "smooth" }}>
       <SessionProvider session={session}>
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className}>
+          <MynavBar />
+          {children}
+        </body>
       </SessionProvider>
     </html>
   );
